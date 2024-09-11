@@ -1,0 +1,160 @@
+* {
+    color: #24272E;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wizytowka {
+    margin: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.wizytowka img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.tlo-zdjecia {
+    border-radius: 50%;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14, 173, 173)), color-stop(0.67, rgb(0, 255, 255)));
+    background-image: -moz-linear-gradient(center bottom, rgb(14, 173, 173) 33%, rgb(0, 255, 255) 67%);
+    padding: 30px;
+}
+
+.n {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.wizytowka h2 {
+    font-size: 2.5rem;
+}
+
+.wizytowka img{
+    max-height: 100vh;
+}
+
+.naglowek {
+    padding-bottom: 120px;
+}
+
+.galeria {
+    display: grid;
+}
+
+#heroes {
+    border-radius: 40px;
+}
+
+
+#heroes img {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+#seat-carousel{
+    position: relative;
+    background-color: gray;
+    z-index: -1;
+}
+
+.podtlo {
+    position: relative;
+    background-color: gray;
+    height: 50px;
+    margin-top: -50px;
+    z-index: -1;
+}
+
+#footer *{
+    color: white;
+}
+
+@media (min-width: 1000px){
+    #main{
+        text-align: left;
+    }
+
+    #main h1{
+        text-align: left;
+    }
+
+    .tlo-zdjecia {
+        padding: 0px;
+        width: 60%;
+        align-self: center;
+    }
+
+    .wizytowka {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100vh;
+        padding-left: 30px;
+        text-align: left;
+    }
+}
+
+
+.gradient-background {
+    background: linear-gradient(336deg, #3490ff, #4000df, #00d3df);
+    background-size: 600% 600%;
+
+    -webkit-animation: gradient-animation 12s ease infinite;
+    -moz-animation: gradient-animation 12s ease infinite;
+    animation: gradient-animation 12s ease infinite;
+}
+
+@-webkit-keyframes gradient-animation {
+    0%{background-position:28% 0%}
+    50%{background-position:73% 100%}
+    100%{background-position:28% 0%}
+}
+@-moz-keyframes gradient-animation {
+    0%{background-position:28% 0%}
+    50%{background-position:73% 100%}
+    100%{background-position:28% 0%}
+}
+@keyframes gradient-animation {
+    0%{background-position:28% 0%}
+    50%{background-position:73% 100%}
+    100%{background-position:28% 0%}
+}
+
+.heroes-gradient {
+    background: linear-gradient(85deg, #878e8c, #abb6b3, #494949);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
